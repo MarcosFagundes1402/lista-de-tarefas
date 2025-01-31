@@ -1,8 +1,6 @@
 :root {
     --darkmode-color: #1a202c;
-    --lightmode-color: #fff;
     --font-color-dark: #fff;
-    --font-color-light: #000;
 }
 
 html {
