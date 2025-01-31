@@ -1,0 +1,243 @@
+:root {
+    --darkmode-color: #1a202c;
+    --lightmode-color: #fff;
+    --font-color-dark: #fff;
+    --font-color-light: #000;
+}
+
+html {
+    font: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Charm", serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    height: calc(100vh-20px);
+    background-color: var(--darkmode-color);
+    color: var(--font-color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+}
+ .limpar{
+    background-color: #29324469;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 10px 20px;
+ }
+
+ .limpar:hover{
+    background-color: #293244;
+ }
+
+
+.container-list {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #ffffff1c;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.container-list h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.input-todo {
+    flex: 1;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-todo input {
+    flex: 1;
+    width: 90%;
+    background-color: var(--darkmode-color);
+    border: 1px solid #ffffff1c;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.input-todo button {
+    width: 30px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.input-todo label {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-todo input {
+    width: 100%;
+    height: 90%;
+}
+
+.input-todo ::placeholder {
+    padding-left: 10px;
+}
+
+.item-todo {
+    flex: 1;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;   
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+}
+
+.buttons-todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    gap: 5px;
+}
+
+.buttons-todo button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.buttons-todo button:hover,
+.input-todo button:hover,
+.limpar:hover {
+    background-color: #293244;
+    border-radius: 10px;
+}
+
+.buttons-todo button,
+.input-todo button,
+.limpar {
+    transition: background-color .5s ease;
+}
+
+@media (min-width: 700px) {
+    button {
+        font-size: 1.5rem;
+    }
+    .container-list {
+        margin: auto;
+        width: 600px;
+        font-size: 1.5rem;
+    }
+
+    .container-list h1 {
+        font-size: 4rem;
+    }
+
+    .input-todo {
+        margin: auto;
+        width: 90%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .input-todo label {
+        flex: 1;
+        height: 100%;
+        justify-content: left;
+    }
+    
+    .input-todo input {
+        width: 100%;
+        height: 90%;
+        font-size: 1.2rem;
+    }
+    .input-todo button{
+        width: 60px;
+        height: 100%;
+    }
+
+    .input-todo ::placeholder {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .container-list li{
+        width: 100%;
+        height: 50px;
+        
+    }
+    .item-todo {
+        width: 100px;
+        height: 100%;
+    }
+
+    .buttons-todo {
+        width: 30%;
+    }
+
+}
